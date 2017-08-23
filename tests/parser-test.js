@@ -1,14 +1,13 @@
 const test = require('tape');
 const parser = require('../src/parser');
 
-test('Parser should parse input from psv format to array', t => {
+test('#toArray should parse input from psv format to array', t => {
     t.deepEqual(parser.toArray('| 9 | 1 |'), [[9, 1]]);
-    t.deepEqual(parser.toArray(`| 2 | 8 |\r\n| 3 | 7 |`), [[2, 8], [3, 7]]);
     t.deepEqual(parser.toArray(`| 2 | 8 |\r\n| 3 | 7 |`), [[2, 8], [3, 7]]);
     t.end();
 });
 
-test('Parser should render output back from array to psv format', t => {
+test('#toPSV should render output back from array to psv format', t => {
     t.deepEqual(parser.toPSV([[1, 8]]), '| 1 | 8 |');
     t.deepEqual(parser.toPSV([[2, 8], [3, 7]]), '| 2 | 8 |\r\n| 3 | 7 |');
     t.end();
