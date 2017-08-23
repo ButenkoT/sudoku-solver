@@ -1,0 +1,31 @@
+{
+  "name": "sudoku-solver",
+  "version": "1.0.0",
+  "description": "command line tool to solve sudoku",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "tape tests/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ButenkoT/sudoku-solver.git"
+  },
+  "keywords": [
+    "tape",
+    "vanila js",
+    "sudoku"
+  ],
+  "author": "Tanya Butenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ButenkoT/sudoku-solver/issues"
+  },
+  "homepage": "https://github.com/ButenkoT/sudoku-solver#readme",
+  "devDependencies": {
+    "tape": "^4.8.0"
+  }
+}
