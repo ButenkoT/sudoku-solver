@@ -1,20 +1,30 @@
-### Sudoku Solver
+# Sudoku Solver
 
 Command line tool to solve Sudoku.
 
 
-#### Installation:
+## Installation:
 
-    npm install
+```bash
+npm install
+```
 
-#### Run:
+## Run:
 
-    cat Sudoku1_Basic.psv | npm start
+```bash
+npm start Sudoku1_Basic.psv sudoku1_solution.psv
+```
 
 To work with new data - put text file with data and run:
 
-    cat <fileName> | npm start
+```bash
+npm start <inputFileName> [<outputFileName>]
+```
 
-#### Run tests:
+If output file name is omitted result will be logged to console. 
 
-    npm test
+## Run tests:
+
+```bash
+npm test
+```
