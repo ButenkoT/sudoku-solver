@@ -5,6 +5,8 @@ Command line tool to solve Sudoku.
 
 ## Installation:
 
+You will need latest Node v8.4.0 on your machine. 
+
 ```bash
 npm install
 ```
