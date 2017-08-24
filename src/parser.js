@@ -1,11 +1,11 @@
-exports.toArray = input =>
+exports.toArray = (input, lineEnding = '\n') =>
     input
-        .split('\r\n')
+        .split(lineEnding)
         .map(row => row.split('|')
             .filter(el => el !== '')
             .map(el => parseInt(el.trim().replace('.', '0'), 10)));
 
-exports.toPSV = output =>
+exports.toPSV = (output, lineEnding = '\n') =>
     output
         .map(row => `| ${row.map(el => el === 0 ? '.' : el).join(' | ')} |`)
-        .join('\r\n');
+        .join(lineEnding);
